@@ -41,6 +41,7 @@ syn keyword tsTodo TODO FIXME XXX contained
 let b:current_syntax = "torquescript"
 
 hi def link tsComment Comment
+hi def link tsBlockComment Comment
 hi def link tsConstant Constant
 hi def link tsConditional Conditional
 hi def link tsLabel Label
