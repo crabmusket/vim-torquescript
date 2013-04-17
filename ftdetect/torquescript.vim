@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.ts,*.cs set filetype=torquescript
+au BufNewFile,BufRead *.ts,*.gui,*.mis,*.cs set filetype=torquescript
