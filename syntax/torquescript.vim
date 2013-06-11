@@ -28,8 +28,8 @@ syn region tsTaggedString start="'" end="'"
 syn match tsClassName '[a-zA-Z]\+' contained
 
 " Variables
-syn match tsLocalVariable '%[a-zA-Z]\+'
-syn match tsGlobalVariable '\$[a-zA-Z:]\+'
+syn match tsLocalVariable '%[a-zA-Z][a-zA-Z0-9_]*'
+syn match tsGlobalVariable '\$[a-zA-Z][a-zA-Z0-9:_]*'
 
 " Blocks
 syn region tsBlock start="{" end="}" fold transparent
