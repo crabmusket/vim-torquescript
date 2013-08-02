@@ -9,7 +9,7 @@ endif
 
 " Keywords
 syn keyword tsKeyword break continue return
-syn keyword tsCreationKeyword new datablock package nextgroup=tsClassName skipwhite
+syn keyword tsCreationKeyword new datablock singleton package nextgroup=tsClassName skipwhite
 syn keyword tsFunctionDef function
 syn keyword tsConditional if else switch switch$
 syn keyword tsLabel case default
