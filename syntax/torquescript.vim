@@ -28,8 +28,8 @@ syn region tsTaggedString start="'" end="'"
 syn match tsClassName '[a-zA-Z]\+' contained
 
 " Variables
-syn match tsLocalVariable '%[a-zA-Z]\+'
-syn match tsGlobalVariable '\$[a-zA-Z:]\+'
+syn match tsLocalVariable '%[a-zA-Z][a-zA-Z0-9_]*'
+syn match tsGlobalVariable '\$[a-zA-Z][a-zA-Z0-9:_]*'
 
 " Blocks
 syn region tsBlock start="{" end="}" fold transparent
@@ -41,6 +41,7 @@ syn keyword tsTodo TODO FIXME XXX contained
 let b:current_syntax = "torquescript"
 
 hi def link tsComment Comment
+hi def link tsBlockComment Comment
 hi def link tsConstant Constant
 hi def link tsConditional Conditional
 hi def link tsLabel Label
