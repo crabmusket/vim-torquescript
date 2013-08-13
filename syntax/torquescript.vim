@@ -13,7 +13,7 @@ syn keyword tsCreationKeyword new datablock package nextgroup=tsClassName skipwh
 syn keyword tsFunctionDef function
 syn keyword tsConditional if else switch switch$
 syn keyword tsLabel case default
-syn keyword tsRepeat for while do
+syn keyword tsRepeat for foreach while do
 syn keyword tsConstant true false
 syn keyword tsOperator + - / * @ SPC TAB NL = == > < >= <=
 
