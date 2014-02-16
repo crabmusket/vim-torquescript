@@ -22,8 +22,8 @@ syn match tsComment '//.*$' contains=tsTodo
 syn region tsBlockComment start="/\*" end="\*/" fold contains=tsTodo
 
 " Strings
-syn region tsString start='"' end='"'
-syn region tsTaggedString start="'" end="'"
+syn region tsString start='"' skip='\\"' end='"'
+syn region tsTaggedString start="'" skip="\\'" end="'"
 
 syn match tsClassName '[a-zA-Z]\+' contained
 
